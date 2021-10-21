@@ -1,0 +1,281 @@
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-white-stats: hsla(0, 0%, 100%, 0.6);
+    --color-main-background: hsl(233, 47%, 7%);
+    --color-card-background: hsl(244, 38%, 16%);
+    --color-accent: hsl(277, 64%, 61%);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    /*SIZE*/
+    height: 100vh;
+    width: 100vw;
+
+    /*POSITION*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*EDIT*/
+    background-color: var(--color-main-background);
+
+}
+
+.container-general{
+    /*SIZE*/
+    width: 1300px;
+    height: 500px;
+
+    /*POSITION*/
+    position: relative;
+
+    /*EDIT*/
+    background-color: var(--color-card-background);
+    border-radius: 10px;
+}
+
+
+
+
+.container-picture_background{ 
+    /*SIZE*/
+    width: 600px;
+    height: 500px; 
+
+    /*POSITION*/
+    position: absolute;
+    left: 700px; 
+    top: 0px; 
+
+    /*EDIT*/
+    background-color: var(--color-accent);
+    background-blend-mode: multiply;
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+} 
+
+.container-title{
+    /*SIZE*/
+    font-size: 40px;
+    width: 450px;
+
+    /*POSITION*/
+    position: absolute;
+    top: 70px;
+    left: 90px;
+
+    /*EDIT*/
+    color: var(--color-white); 
+    letter-spacing: 0.5px;
+}
+.title-accent{
+    /*EDIT*/
+    color: var(--color-accent);
+}
+
+.container-paragraph{
+    /*SIZE*/
+    font-size: 17px;
+    width: 400px;
+
+    /*POSITION*/
+    position: absolute;
+    top: 205px;
+    left: 90px;
+
+    /*EDIT*/
+    color: var(--color-white-paragraph);
+    line-height: 30px;
+
+}
+
+.stats-up{
+    /*SIZE*/
+    font-size: 25px;
+    font-weight: 550;
+
+    /*EDIT*/
+    color: var(--color-white);
+    
+}
+
+.stats-down{
+    /*SIZE*/
+    letter-spacing: 2px;
+    font-size: 12px;
+
+    /*EDIT*/
+    color: var(--color-white-stats);
+    
+}
+
+#stats-up1{
+    /*POSITION*/
+    position: absolute;
+    top: 370px;
+    left: 92px;
+}
+
+#stats-up2{
+    /*POSITION*/
+    position: absolute;
+    top: 370px;
+    left: 251px;
+}
+#stats-up3{
+    /*POSITION*/
+    position: absolute;
+    top: 370px;
+    left: 420px;
+}
+
+#stats-down1{
+    /*POSITION*/
+    position: absolute;
+    top: 410px;
+    left: 90px;
+}
+#stats-down2{
+    /*POSITION*/
+    position: absolute;
+    top: 410px;
+    left: 250px;
+}
+#stats-down3{
+    /*POSITION*/
+    position: absolute;
+    top: 410px;
+    left: 420px;
+}
+
+
+@media screen and (max-width: 375px){
+    
+
+    .container-general{
+        /*SIZE*/
+        width: 320px;
+        height: 750px;
+            
+    }
+    
+
+    .container-picture_background{ 
+        /*SIZE*/
+        width: 320px;
+        height: 240px; 
+    
+        /*POSITION*/
+        position: absolute;
+        left: 0px; 
+        top: 0px; 
+    
+        /*EDIT*/
+        border-top-left-radius: 10px;
+        
+    } 
+
+    .container-title{
+        /*SIZE*/
+        font-size: 26px;
+        width: 280px;
+    
+        /*POSITION*/
+        position: absolute;
+        top: 270px;
+        left: 20px;
+    
+        /*EDIT*/
+        text-align: center;
+    }
+
+    .container-paragraph{
+        /*SIZE*/
+        font-size: 13px;
+        width: 240px;
+    
+        /*POSITION*/
+        position: absolute;
+        top: 380px;
+        left: 40px;
+    
+        /*EDIT*/
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.5px;
+    
+    }
+
+    .stats-up{
+        /*SIZE*/
+        font-size: 23px;
+        font-weight: 550;
+        
+    }
+    
+    .stats-down{
+        /*SIZE*/
+        letter-spacing: 1.5px;
+        font-size: 12px;
+    
+        
+    }
+
+
+    #stats-up1{
+        /*POSITION*/
+        top: 505px;
+        left: 127px;
+    }
+    
+    #stats-up2{
+        /*POSITION*/
+        top: 575px;
+        left: 135px;
+    }
+    #stats-up3{
+        /*POSITION*/
+        top: 655px;
+        left: 127px;
+    }
+    
+    #stats-down1{
+        /*POSITION*/
+        top: 535px;
+        left: 114px;
+    }
+    #stats-down2{
+        /*POSITION*/
+        top: 605px;
+        left: 114px;
+    }
+    #stats-down3{
+        /*POSITION*/
+        top: 685px;
+        left: 125px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
